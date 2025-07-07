@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+}
+button:not(.btn-theme) {
+  width: 150px;
+  font-size: 20px;
+}
+
+
+
+.light-theme {
+  background: radial-gradient(circle at top left, oklch(95% 0.05 80) 0%, oklch(100% 0 271) 100%);
+  color: oklch(18% 0.04 265);
+  transition: background 1s ease, color 0.5s ease;
+}
+.light-theme button {
+  cursor: pointer;
+  color: oklch(20% 0.05 265);
+  border: 2px solid oklch(70% 0.25 40);
+  border-radius: 16px;
+  padding: 10px 24px;
+  font-weight: bold;
+  box-shadow: 0 0 12px oklch(55.3% 0.195 38.402);
+  animation: Shine 2s infinite ease-in-out;
+  transition: all 0.4s ease;
+  margin: 10px;
+}
+.light-theme button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px oklch(60% 0.25 38.402);
+}
+
+
+
+.dark-theme {
+  background: radial-gradient(circle at top left, oklch(33.684% 0.09183 264.803), #000);
+  color: oklch(95% 0 271);
+  transition: background 1s ease, color 0.5s ease;
+}
+.dark-theme button {
+  cursor: pointer;
+  color: oklch(100% 0 271);
+  border: 2px solid oklch(65% 0.22 40);
+  border-radius: 16px;
+  padding: 10px 24px;
+  font-weight: bold;
+  box-shadow: 0 0 12px oklch(55.3% 0.195 38.402);
+  animation: Shine 2s infinite ease-in-out;
+  transition: all 0.4s ease;
+  margin: 10px;
+}
+.dark-theme button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px oklch(70% 0.3 38.402);
+}
+
+
+
+@keyframes Shine {
+  0% {
+    box-shadow: 0 0 5px oklch(55.3% 0.195 38.402);
+  }
+  50% {
+    box-shadow: 0 0 10px oklch(65% 0.25 38.402);
+  }
+  100% {
+    box-shadow: 0 0 5px oklch(55.3% 0.195 38.402);
+  }
+}

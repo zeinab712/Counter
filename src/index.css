@@ -1,0 +1,15 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+
+
+
